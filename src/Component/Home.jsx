@@ -23,10 +23,10 @@ export default function Home() {
   const postData = () => {
     const Regex = new RegExp("[a-zA-Z0-9]{1,}");
     if (Regex.test(todo) === true) {
-      add();
       if (editable !== -1) {
         editTodo(editable);
       }
+      add();
       setData([...form]);
       setTodo("");
       setShow(false);
@@ -81,9 +81,13 @@ export default function Home() {
         })}
       </div>
       <div className="home-indicator"></div>
-      {show === true ?<div>
-        <AddTodo setTodo={setTodo} setShow={setShow} postData={postData} /> 
-        </div> : ""}
+      {show === true ? (
+        <div>
+          <AddTodo setTodo={setTodo} setShow={setShow} postData={postData} />
+        </div>
+      ) : (
+        ""
+      )}
     </div>
   );
 }
