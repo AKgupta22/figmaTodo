@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import PlusIcon from "../asset/images/icon_plus.svg";
 import useHandler from "../Hooks";
+import AddTodo from "./Generic/AddTodo";
 import TodoItems from "./Generic/TodoItems";
 
 export default function Home() {
@@ -66,6 +67,7 @@ export default function Home() {
         {data?.map((item, i) => {
           return (
             <TodoItems
+              key={i}
               item={item}
               i={i}
               editable={editable}
@@ -79,31 +81,9 @@ export default function Home() {
         })}
       </div>
       <div className="home-indicator"></div>
-      {show === true ? (
-        <div>
-          <div className="rectangle-3">
-            <h4 className="addtodo">Add Todo</h4>
-            <textarea
-              className="form-control"
-              cols="30"
-              rows="8"
-              style={{ resize: "none" }}
-              required={true}
-              onChange={(e) => setTodo(e.target.value)}
-            ></textarea>
-            <div className="two-buttons">
-              <div className="label1" onClick={() => setShow(false)}>
-                Cancel
-              </div>
-              <div className="label2" onClick={() => postData()}>
-                Done
-              </div>
-            </div>
-          </div>
-        </div>
-      ) : (
-        ""
-      )}
+      {show === true ?<div>
+        <AddTodo setTodo={setTodo} setShow={setShow} postData={postData} /> 
+        </div> : ""}
     </div>
   );
 }
