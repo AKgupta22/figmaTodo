@@ -1,0 +1,160 @@
+body {
+    background-color: #ffffff;
+}
+
+/* Home  */
+
+/* Mobile First */
+
+@font-face {
+    font-family: 'SFProText';
+    src: url('./SF-Pro-Text-Regular.otf');
+}
+
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url('./SF-Pro-Display-Regular.otf');
+}
+
+.main-home {
+    margin: 0 3%;
+    min-height: 860px;
+}
+
+.inner-home {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+    margin-right: 3.5%;
+}
+
+.inner-home .today-head {
+    font-family: 'SFProDisplay';
+    font-size: 32px;
+    line-height: 41px;
+    letter-spacing: 0.01em;
+    color: #252A31;
+    font-weight: 600;
+}
+
+.inner-home .more {
+    width: 25px;
+    height: 25px;
+}
+
+.item-container {
+    margin-top: 2rem;
+}
+
+.title-items {
+    margin-bottom: 2rem;
+}
+
+.inner-titile-items {
+    display: grid;
+    grid-template-columns: 12% 60% 9% 9% 10%;
+    grid-column-gap: 4px;
+
+}
+
+.inner-titile-items .btn {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.inner-titile-items .label {
+    font-family: 'SFProText';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: -0.02em;
+    color: #252A31;
+}
+
+.inner-titile-items .unmasked {
+    border: 2px solid #DADADA;
+    height: 25px;
+    border-radius: 100%;
+    width: 25px;
+    text-align: center;
+}
+
+.inner-titile-items .list {
+    width: 12px;
+    height: 12px;
+    background: #F45E6D;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.title-items .rectangle1 {
+    background: #252A31;
+    mix-blend-mode: normal;
+    opacity: 0.1;
+    height: 1px;
+    width: 85.8vw;
+    margin: auto;
+    margin-left: 12%;
+    margin-top: 5%;
+}
+
+.home-indicator {
+    background: #252A31;
+    border-radius: 100px;
+    height: 5px;
+    width: 35%;
+    position: absolute;
+    bottom: 20px;
+    left: 32%;
+    right: 32%;
+}
+
+.rectangle-3 {
+    position: absolute;
+    top: 13%;
+    left: 5%;
+    background: #f9f6f6;
+}
+
+.rectangle-3 .addtodo {
+    font-family: 'SFProText';
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 41px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.rectangle-3 .form-control {
+    width: 80%;
+    margin: auto;
+
+}
+
+.two-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.two-buttons .label1 {
+    font-family: 'SFProText';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: -0.434118px;
+    color: #006CFF;
+}
+
+.two-buttons .label2 {
+    font-family: 'SFProText';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: -0.434118px;
+    color: #006CFF;
+}
